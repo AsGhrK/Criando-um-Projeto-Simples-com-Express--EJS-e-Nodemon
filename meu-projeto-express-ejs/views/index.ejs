@@ -3,8 +3,65 @@
 <head>
   <title>Projeto Express e EJS</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
 </head>
+<style>
+
+  img {
+    height: auto;
+    object-fit: cover;
+    width: auto;
+}
+</style>
 <body>
-  <h1><%= message %></h1>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Bootstrap
+      </a>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+  
+  <div class="container text-center" style="margin-top:100px ;">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="/img/mouse.png" class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Gamer Redragon Reaping RGB, Preto, M987-K</h5>
+            <p class="card-text">R$: 150,30</p>
+            <a href="mouse.ejs" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="https://img.terabyteshop.com.br/produto/g/teclado-gamer-mecanico-t-dagger-bora-switch-red-rgb-black-abnt2-t-tgk315-rd_114403.png" class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Teclado Gamer Mecânico T-Dagger Bora, Switch Red, RGB, Black, ABNT2, T-TGK315-RD V2</h5>
+            <p class="card-text">SR$ 189,00</p>
+            <a href="teclado.ejs" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="/img/monitor.jpg" class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Monitor Gamer AGON PRO 27 4K 144Hz 1ms RGB DTS AG274UXP</h5>
+            <p class="card-text">R$ 7.599,00</p>
+            <a href="monitor.ejs" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

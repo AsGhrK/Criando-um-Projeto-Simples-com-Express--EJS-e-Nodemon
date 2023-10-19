@@ -11,10 +11,18 @@ app.get('/', (req, res) => {
 });
 //
 
-app.get('/1', (req, res) => { 
-  res.render('contato', { message: 'Olá, Mundo!HAHAHAHAHAHAHahhahahahahahaha' });
+app.get('/monitor.ejs', (req, res) => { 
+  res.render('monitor');
 });
 
+
+app.get('/mouse.ejs', (req, res) => { 
+  res.render('mouse');
+});
+
+app.get('/teclado.ejs', (req, res) => { 
+  res.render('teclado');
+});
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
