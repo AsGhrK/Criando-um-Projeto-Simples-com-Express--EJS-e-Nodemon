@@ -11,6 +11,13 @@ app.get('/', (req, res) => {
 });
 //
 
+const produtos =[
+  {id:1, nome: "nome",preco: 1000, dricricao:"discricao", imagem:""},
+  {id:2, nome: "nome",preco: 1000, dricricao:"discricao", imagem:""},
+  {id:3, nome: "nome",preco: 1000, dricricao:"discricao", imagem:""}
+]
+
+
 app.get('/monitor.ejs', (req, res) => { 
   res.render('monitor');
 });
@@ -22,6 +29,10 @@ app.get('/mouse.ejs', (req, res) => {
 
 app.get('/teclado.ejs', (req, res) => { 
   res.render('teclado');
+});
+
+app.get('/index.ejs', (req, res) => { 
+  res.render('index');
 });
 
 app.listen(port, () => {

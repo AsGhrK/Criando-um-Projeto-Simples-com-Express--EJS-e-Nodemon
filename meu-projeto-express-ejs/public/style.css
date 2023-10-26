@@ -3,3 +3,7 @@ img {
     object-fit: cover;
     width: 200px;
 }
+
+.alinhamento{
+    text-align: center !important; 
+}
