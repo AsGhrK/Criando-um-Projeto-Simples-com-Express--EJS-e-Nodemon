@@ -19,7 +19,7 @@ const produtos = [
   { id: 5, nome: "Suporte para Monitor Duplo Husky Office - Articulado, Com pistão a gás, Para tela de 10 a 32 - HOFL001", preco: 329.40, dricricao: "O suporte Husky vem com presilha tipo C para instalação em mesa, e comporta dois monitores de 10 até 32 polegadas. Possuem braços articulados com pistões a gás, que funcionam como amortecedores para ajustar perfeitamente os monitores na altura desejada, com movimentos leves e estabilizados. Personalize inclinação, extensão, altura e posição com a praticidade que o suporte oferece, para manter conforto durante longos períodos de uso e trabalho, além de manter a bancada organizada e os cabos escondidos, deixando o espaço de trabalho com tudo que precisa para o melhor desempenho.", imagem: "img/suporte.jpg", link:"suporte.ejs" },
   { id: 6, nome: "Cadeira Gamer Husky Gaming Hailstorm, Preto, Com Almofadas, Reclinável, Descanso de Braço 2D - HHA-BK", preco: 767.41, dricricao: "Cadeira Gamer Husky Gaming Hailstorm - PretO A Cadeira Gamer Husky HailStorm oferece design arrojado e moderno, perfeito para que seu espaço gamer tenha a sua identidade. A Husky HailStorm possui Material PU em sua superfície, com densidade da espuma de 50kg/m³ no assento e 35kg/m³ no encosto, possibilitando máximo conforto ao usuário, ideal para quem passa horas se divertindo no mundo dos games. O tamanho do assento é de 400x470mm e do encosto é de 580x850mm, ou seja, muito mais espaço para gamers que buscam robustez aliado à qualidade. Cadeira Gamer Reclinável: São diversas as vantagens da Cadeira Gamer Husky HailStorm: reclinagem de até 135º, regulagem de altura por pistão à gás e apoios de braço com regulagem pelo mecanismo butterfly - podem ser regulados para cima/baixo e esquerda/direita. Muito mais que estilo, todos esses ajustes proporcionam uma rica experiência que melhoram a performance durante as partidas. Conforto e Versatilidade: Para maximizar a sensação de conforto extremo, a cadeira conta com duas almofadas de apoio, no encosto e também no assento. Outro item fundamental são suas rodas, que foram desenvolvidas em 100% Nylon. Podem ser utilizadas em ambientes como escritórios, residências e lojas comerciais, proporcionando versatilidade para a cadeira. Muito conforto para você passar níveis difíceis no singleplayer, ou quando é preciso de muita atenção e foco nas partidas online como o League of Legends, Fortnite, CS:GO, Free Fire, em que cada ponto, conta!", imagem: "img/cadeira.jpg", link:"cadeira.ejs" },
   { id: 7, nome: "Mesa Gamer HMG01 Azul Fortrek", preco: 712.96, dricricao: "Mesa gamer modelo HMG01 Fortrek Dimensões da Mesa (L x P x A): 1200 x 800 x 765 mm Com design ergonômico, a mesa HMG01 é feita de MDF originado de reflorestamento e suporta até 150 kg Apresenta pintura a pó eletrostática e arte em adesivo de alta resistência; Possui estrutura em aço 50x20 com pés niveladores e pesa 18 kg", imagem: "img/measa.jpg", link:"mesa.ejs" },
-  { id: 7, nome: "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com Mousepad gamer Led com em volta superficie speed para jogos", preco: 39.80, dricricao: "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos. Com um moderno sistema de luz LED integrado, este acessório trará efeito de iluminação para a experiência diária com o seu equipamento. Sincronize a emissão e intensidade das cores com o software e desfrutar do seu estímulo visual.", imagem: "img/ped.jpg", link:"ped.ejs" }
+  { id: 8, nome: "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com Mousepad gamer Led com em volta superficie speed para jogos", preco: 39.80, dricricao: "É tão fácil deslizar o mouse. Com o seu mousepad você poderá preencher a tela do seu computador com cliques. Sua superfície elaborada dará precisão e conforto aos seus movimentos. Com um moderno sistema de luz LED integrado, este acessório trará efeito de iluminação para a experiência diária com o seu equipamento. Sincronize a emissão e intensidade das cores com o software e desfrutar do seu estímulo visual.", imagem: "img/ped.jpg", link:"ped.ejs" }
 ]
 
 function buscarProdutosPoriD(id) {
@@ -29,34 +29,10 @@ function buscarProdutosPoriD(id) {
 
 console.log(buscarProdutosPoriD(2))
 
-app.get('/index.ejs', (req, res) => {
-  res.render('index');
+app.get('/produtos', (req, res) => {
+  res.render('vizualizar');
 });
 
-app.get('/mouse.ejs', (req, res) => {
-  res.render('mouse');
-});
-
-
-app.get('/monitor.ejs', (req, res) => {
-  res.render('monitor');
-});
-
-app.get('/teclado.ejs', (req, res) => {
-  res.render('teclado');
-});
-
-app.get('/pc.ejs', (req, res) => {
-  res.render('pc');
-});
-
-app.get('/suporte.ejs', (req, res) => {
-  res.render('suporte');
-});
-
-app.get('/cadeira.ejs', (req, res) => {
-  res.render('cadeira');
-});
 
 
 app.listen(port, () => {

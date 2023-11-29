@@ -37,7 +37,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= produto.nome %></h5>
             <p class="card-text">R$:<%= produto.preco %></p>
-            <a href=<%= produto.link %> class="btn btn-primary">Veja mais!</a>
+            <a href="/produtos?id=<%= produto.id %>" class="btn btn-primary">Veja mais!</a>
           </div>
         </div>
       <% } %>
