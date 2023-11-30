@@ -33,11 +33,11 @@
     <div class="row">
       <% for (let produto of produtos){ %>
         <div class="card" style="flex: 0 0 18rem; margin: 10px;">
-          <img src=<%= produto.imagem %> class="img-fluid" alt="...">
+          <img src="<%= produto.imagem %>" class="img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title"><%= produto.nome %></h5>
             <p class="card-text">R$:<%= produto.preco %></p>
-            <a href="/produtos?id=<%= produto.id %>" class="btn btn-primary">Veja mais!</a>
+            <a href="/produtos/<%= produto.id %>" class="btn btn-primary">Veja mais!</a>
           </div>
         </div>
       <% } %>
